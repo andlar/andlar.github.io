@@ -1,18 +1,28 @@
-/* Theme */
+:root {
+  --primary: #4B5658;
+  --background: #ededed;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #fafafa;
+    --background: #485564;
+  }
+}
 
 main {
-    background: #485564;
-    color: #FAFAFA;
+    background: var(--background);
+    color: var(--primary);
 }
 
 .icons-social a {
-    color: #FAFAFA;
+    color: var(--primary);
 }
 
-.icons-social a svg path {
-    fill: #FAFAFA;
+.icons-social a svg path{
+    fill: var(--primary);
 }
 
 .podcast a {
-    color: #FAFAFA;
+    color: var(--primary);
 }
