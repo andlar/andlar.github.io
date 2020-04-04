@@ -15,6 +15,22 @@ main {
     color: var(--primary);
 }
 
+dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+dt {
+    width: 40%;
+    text-align: right;
+}
+
+dd {
+    margin-left: auto;
+    width: 59%;
+    text-align: left;
+}
+
 .icons-social a {
     color: var(--primary);
 }
