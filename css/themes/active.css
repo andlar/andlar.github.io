@@ -1,44 +1,14 @@
-:root {
-  --primary: #4B5658;
-  --background: #ededed;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary: #fafafa;
-    --background: #485564;
-  }
-}
+/* Theme */
 
 main {
-    background: var(--background);
-    color: var(--primary);
-}
-
-dl {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-dt {
-    width: 40%;
-    text-align: right;
-}
-
-dd {
-    margin-left: auto;
-    width: 59%;
-    text-align: left;
+	background: #EDEDED;
+	color: #4B5658;
 }
 
 .icons-social a {
-    color: var(--primary);
+	color: #4B5658;
 }
 
 .icons-social a svg path{
-    fill: var(--primary);
-}
-
-.podcast a {
-    color: var(--primary);
+	fill: #4B5658;
 }

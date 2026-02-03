@@ -49,10 +49,24 @@ main > .intro {
     font-weight: 600;
 }
 
+main > .subtitle {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
 main > .tagline {
     font-size: 1.5rem;
     margin: 1.5rem 0;
     font-weight: 100;
+}
+
+main > .events {
+    display: flex;
+    gap: 20px;
+}
+
+main > .events > ul {
+    flex-basis: 33%;
 }
 
 .icons-social i {
