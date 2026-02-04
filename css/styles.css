@@ -43,6 +43,10 @@ main {
     text-align: center;
 }
 
+main > .banner > img {
+    max-height: 40vh;
+}
+
 main > .intro {
     font-family: 'Reem Kufi', sans-serif;
     font-size: 3.75em;
