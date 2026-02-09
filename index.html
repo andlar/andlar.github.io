@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>80 Gerbils</title>
+    <title>T&A Wedding</title>
 
     <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
@@ -25,50 +25,73 @@
     <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300|Dancing+Script:700&display=swap" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/themes/active.css">
+    <link rel="stylesheet" href="css/themes/events-home.css">
+    <link rel="stylesheet" href="css/themes/wedding-modern.css">
   </head>
   <body>
+    <div class="app-bar">
+      <div class="logo">T❤️A</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="baltimore.html">Baltimore</a>
+        <a href="spokane.html">Spokane</a>
+        <a href="hash.html">Hash</a>
+      </nav>
+    </div>
     <main>
+      <div class="ticker-hero">
+        <p class="ticker-subtext">
+          Trandrew AKA Tracy &amp; Andrew<br />
+        </p>
+        <p class="ticker-text">
+          Invite you to their Summer Wedding Shenanigans
+        </p>
+        <p class="ticker-text-highlight">Three events, one love, and a whole lot of fun!</p>
+      </div>
       <div class="banner"><img src="assets/wedding.jpeg" alt="80 Gerbils at a previous wedding" /></div>
-      <div class="intro">
-        80 Gerbils
-      </div>
-      <div class="subtitle">
-        (AKA Trandrew)
-      </div>
-      <div class="subtitle">
-        (AKA Tracy &amp; Andrew)
-      </div>
-      <div class="tagline">
-        Invite you to their Summer Wedding Shenanigans
-      </div>
-      <div class="events">
-      <ul>
-        <li>June 6, 2026</li>
-        <li>Baltimore MD</li>
-        <li>Pub crawl and wedding</li>
-        <li><a href="baltimore.html">Details & RSVP</a></li>
-      </ul>
-      <ul>
-        <li>July 11, 2026</li>
-        <li>Spokane WA</li>
-        <li>Family friendly reception</li>
-        <li><a href="spokane.html">Details & RSVP</a></li>
-      </ul>
-      <ul>
-        <li>August 29, 2026</li>
-        <li>BAH3 campout</li>
-        <li>Hash wedding</li>
-        <li><a href="hash.html">Details & RSVP</a></li>
-      </ul>
-      </div>
-      <div class="tagline">
-        In lieu of gifts, please consider a donation to <a href="https://www.domesticshelters.org/fundraisers/wish-lists">a local Domestic Violence Shelter</a>
-      </div>
+      <div class="container">
+        <div class="events" style="display: flex; justify-content: center; gap: 1em; margin-top: -8em;">
+          <!-- Baltimore Event Card -->
+          <div class="event-card event-baltimore">
+            <div class="event-date">June 6, 2026 &mdash; Baltimore, MD</div>
+            <div class="event-title">Pub Crawl & Wedding</div>
+            <img class="event-img" src="assets/baltimore.jpeg" alt="80 Gerbils in rock outfits" />
+            <div class="event-desc">A wild pub crawl and wedding bash. Funky vibes encouraged. 21+ only. RSVP required!</div>
+            <a class="event-link" href="baltimore.html">Details & RSVP</a>
+          </div>
+          <!-- Spokane Event Card -->
+          <div class="event-card event-spokane">
+            <div class="event-date">July 11, 2026 &mdash; Spokane, WA</div>
+            <div class="event-title">Family Garden Reception</div>
+            <!-- Garden SVG graphic -->
+            <img class="event-img" src="assets/spokane.jpg" alt="80 Gerbils at Agnew Grocery" />
+            <div class="event-desc">A formal, family-friendly garden party. All ages welcome. RSVP required!</div>
+            <a class="event-link" href="spokane.html">Details & RSVP</a>
+          </div>
+          <!-- Hash Event Card -->
+          <div class="event-card event-hash">
+            <div class="event-date">August 29, 2026 &mdash; BAH3 Campout</div>
+            <div class="event-title">Hash Wedding & Pool Party</div>
+            <!-- Animated Pool SVG graphic -->
+            <img class="event-img" src="assets/hash2.jpeg" alt="80 Gerbils proposal picture" />
+            <div class="event-desc">A summer poolside party for friends. Dress code: come as you are. Rego required!</div>
+            <a class="event-link" href="hash.html">Details & RSVP</a>
+          </div>
+        </div>
+        <div class="tagline" style="margin-top:2em; color: aqua;">
+          In lieu of gifts, please consider a donation to <a style="color: aqua;" href="https://www.domesticshelters.org/fundraisers/wish-lists">a local Domestic Violence Shelter</a>
+        </div>
+      </div> <!-- end .container -->
+    </main>
+    <footer class="footer">
+      <div>With love, Tracy &amp; Andrew &mdash; <span style="font-family: 'Reem Kufi', sans-serif; color: #c8102e;">80 Gerbils</span></div>
+      <div style="margin-top:0.5em; font-size:0.95em;">Website lovingly crafted for our friends and family &middot; <a href="mailto:contact@80gerbils.com">Contact us</a></div>
+    </footer>
     </main>
   </body>
 </html>

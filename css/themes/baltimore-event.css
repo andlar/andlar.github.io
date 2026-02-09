@@ -1,0 +1,52 @@
+/* Baltimore event page theme: Red & Black Funky */
+body {
+  background: linear-gradient(135deg, #c8102e 60%, #111 100%);
+  color: #fff;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2em 1.5em;
+  background: rgba(0,0,0,0.55);
+  border-radius: 1.5em;
+  box-shadow: 0 4px 32px 0 rgba(0,0,0,0.18);
+}
+
+.banner img {
+  border: 4px solid #ffec00;
+  border-radius: 1em;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.5);
+}
+
+.intro, .tagline {
+  color: #ffec00;
+  font-family: 'Reem Kufi', sans-serif;
+  text-shadow: 2px 2px 0 #111;
+}
+
+ul li strong {
+  color: #ffec00;
+}
+
+a, .event-link {
+  color: #ffec00;
+  font-weight: bold;
+  text-decoration: underline wavy #ffec00;
+}
+
+a:hover, .event-link:hover {
+  color: #fff;
+  background: #c8102e;
+  text-decoration: underline wavy #fff;
+}
+
+hr {
+  border: 1px solid #ffec00;
+  margin: 2em 0;
+}
+
+.icons-social i {
+  color: #ffec00;
+  font-size: 2.5em;
+}

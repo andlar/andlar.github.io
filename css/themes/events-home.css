@@ -1,0 +1,177 @@
+/* Event theme color variables */
+:root {
+  --baltimore-main: #000000;
+  --baltimore-accent: #111;
+  --baltimore-funky: #ffec00;
+
+  --spokane-main: #000000;
+  --spokane-accent: #0078d7;
+  --spokane-garden: #20b2aa;
+
+  --hash-main: #000000;
+  --hash-accent: #00bcd4;
+  --hash-fun: #ff4081;
+
+  --card-bg: #f7cdcd;
+  --card-shadow: 0 4px 32px 0 rgba(60,40,80,0.10);
+  --card-radius: 1.25em;
+  --card-border: 1.5px solid #ece6f6;
+}
+
+/* Home event cards */
+
+.event-card {
+  background: rgb(231, 222, 253)!important;
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  border: var(--card-border);
+  margin: 1.5em 0.5em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.18s, transform 0.18s;
+  position: relative;
+  min-width: 320px;
+  max-width: 400px;
+}
+.event-card:hover {
+  box-shadow: 0 8px 40px 0 rgba(60,40,80,0.16);
+  transform: translateY(-2px) scale(1.025);
+}
+
+
+.event-baltimore {
+  border: 2.5px solid var(--baltimore-main);
+}
+.event-baltimore .event-title {
+  color: var(--baltimore-main);
+  font-family: 'Reem Kufi', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+.event-baltimore .event-date {
+  color: var(--baltimore-accent);
+  background: #fff;
+  border-radius: 1em;
+  padding: 0.2em 1em;
+  font-weight: 500;
+  font-size: 1.08em;
+}
+
+
+.event-spokane {
+  border: 2.5px solid var(--spokane-main);
+}
+.event-spokane .event-title {
+  color: var(--spokane-main);
+  font-family: 'Reem Kufi', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+.event-spokane .event-date {
+  color: var(--spokane-accent);
+  background: #ffcdcd;
+  border-radius: 1em;
+  padding: 0.2em 1em;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  font-size: 1.08em;
+}
+
+
+.event-hash {
+  border: 2.5px solid var(--hash-main);
+}
+.event-hash .event-title {
+  color: var(--hash-main);
+  font-family: 'Reem Kufi', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+.event-hash .event-date {
+  color: var(--hash-fun);
+  background: #860c0c;
+  border-radius: 1em;
+  padding: 0.2em 1em;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  font-size: 1.08em;
+}
+
+
+.event-card .event-img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 0.75em;
+  margin-bottom: 1.2em;
+  box-shadow: 0 2px 12px 0 rgba(60,40,80,0.10);
+}
+
+
+.event-title {
+  font-size: 1em;
+  margin-bottom: 0.1em;
+  letter-spacing: 1.2px;
+}
+.event-date {
+  font-size: 1.08em;
+  margin-bottom: 0.5em;
+  font-family: 'Roboto', sans-serif;
+}
+.event-desc {
+  font-size: 1.08em;
+  margin-bottom: 1.1em;
+  color: #444;
+  font-family: 'Roboto', sans-serif;
+}
+.event-link {
+  display: inline-block;
+  margin-top: 0.5em;
+  padding: 0.5em 1.5em;
+  border-radius: 1.5em;
+  background: #f7f3fa;
+  color: #222;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 2px 8px 0 rgba(60,40,80,0.06);
+  border: 1.5px solid #ece6f6;
+  transition: background 0.18s, color 0.18s, border 0.18s;
+  font-size: 1em;
+}
+.event-link:hover {
+  background: #ece6f6;
+  color: #4b2e83;
+  border-color: #c8102e;
+}
+.event-baltimore .event-link {
+  border-color: var(--baltimore-main);
+  color: var(--baltimore-main);
+}
+.event-spokane .event-link {
+  border-color: var(--spokane-main);
+  color: var(--spokane-main);
+}
+.event-hash .event-link {
+  border-color: var(--hash-main);
+  color: var(--hash-main);
+}
+
+@media (max-width: 900px) {
+    .events {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+    }
+    .event-card {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 1em 2em 1em;
+      flex: 1 1 320px;
+      min-width: 320px;
+    }
+}
